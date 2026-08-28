@@ -1,0 +1,23 @@
+/*
+Author: Amit Gupta
+Date: 22-Aug-2026
+Program: Print season based on month 
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int month;
+    cout << "Enter month number (1-12):- ";
+    cin >> month;
+
+    switch(month) {
+        case 12: case 1: case 2: cout << "Winter"; break;
+        case 3: case 4: case 5: cout << "Spring"; break;
+        case 6: case 7: case 8: cout << "Summer"; break;
+        case 9: case 10: case 11: cout << "Autumn"; break;
+        default: cout << "Invalid month";
+    }
+    return 0;
+}
